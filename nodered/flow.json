@@ -1,0 +1,963 @@
+[
+    {
+        "id": "5e610d1d954faebc",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b277baada699951b",
+        "type": "mqtt in",
+        "z": "5e610d1d954faebc",
+        "name": "temperature1",
+        "topic": "/temperature1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4482ff548253f9c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 440,
+        "wires": [
+            [
+                "4cb4d553e944f3f0",
+                "de239c5c2b1f15af",
+                "54b710d91f0a0a2c",
+                "5fba24bcb2f423d6"
+            ]
+        ]
+    },
+    {
+        "id": "f83c15d56148a8df",
+        "type": "mqtt in",
+        "z": "5e610d1d954faebc",
+        "name": "temperature2",
+        "topic": "/temperature2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4482ff548253f9c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 540,
+        "wires": [
+            [
+                "644dce61cc905d85",
+                "b178195ccc61738b",
+                "54b710d91f0a0a2c",
+                "5fba24bcb2f423d6"
+            ]
+        ]
+    },
+    {
+        "id": "ef709b2b71415b40",
+        "type": "mqtt in",
+        "z": "5e610d1d954faebc",
+        "name": "temperature3",
+        "topic": "/temperature3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4482ff548253f9c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 640,
+        "wires": [
+            [
+                "9534fa889135a5be",
+                "ff38f7b7208084ea",
+                "54b710d91f0a0a2c",
+                "5fba24bcb2f423d6"
+            ]
+        ]
+    },
+    {
+        "id": "1698fc4dac94586a",
+        "type": "mqtt in",
+        "z": "5e610d1d954faebc",
+        "name": "temperature4",
+        "topic": "/temperature4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4482ff548253f9c1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 740,
+        "wires": [
+            [
+                "89a16fe91602cadf",
+                "79da6bda8696909d",
+                "54b710d91f0a0a2c",
+                "5fba24bcb2f423d6"
+            ]
+        ]
+    },
+    {
+        "id": "4cb4d553e944f3f0",
+        "type": "debug",
+        "z": "5e610d1d954faebc",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "644dce61cc905d85",
+        "type": "debug",
+        "z": "5e610d1d954faebc",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "9534fa889135a5be",
+        "type": "debug",
+        "z": "5e610d1d954faebc",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "de239c5c2b1f15af",
+        "type": "ui_chart",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "group": "fb978ef950202e75",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "T1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 590,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b178195ccc61738b",
+        "type": "ui_chart",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "group": "fb978ef950202e75",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "T2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 590,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ff38f7b7208084ea",
+        "type": "ui_chart",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "group": "e6d5cd3e958962c4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "T3",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 590,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "89a16fe91602cadf",
+        "type": "ui_chart",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "group": "e6d5cd3e958962c4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "T4",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 590,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "79da6bda8696909d",
+        "type": "debug",
+        "z": "5e610d1d954faebc",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "54b710d91f0a0a2c",
+        "type": "ui_chart",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "group": "7b3b1233e88aad03",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "T",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 590,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6e72c7e17863fba9",
+        "type": "ui_table",
+        "z": "5e610d1d954faebc",
+        "group": "18aad3b623715feb",
+        "name": "data_table",
+        "order": 4,
+        "width": "12",
+        "height": "44",
+        "columns": [
+            {
+                "field": "timestamp",
+                "title": "Time (s)",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "/temperature1",
+                "title": "Temperature 1 (C)",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "/temperature2",
+                "title": "Temperature 2 (C)",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "/temperature3",
+                "title": "Temperature 3",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "/temperature4",
+                "title": "Temperature 4 (C)",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "heat_flux",
+                "title": "Heat Flux",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 990,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "5fba24bcb2f423d6",
+        "type": "join",
+        "z": "5e610d1d954faebc",
+        "name": "temperatures",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 610,
+        "y": 820,
+        "wires": [
+            [
+                "3d691bae9c9d1204"
+            ]
+        ]
+    },
+    {
+        "id": "54da38d3783342d5",
+        "type": "debug",
+        "z": "5e610d1d954faebc",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "3d691bae9c9d1204",
+        "type": "function",
+        "z": "5e610d1d954faebc",
+        "name": "function 1",
+        "func": "var startTime = flow.get('startTime')\nlet tableData = flow.get(\"tableData\") || [];\n\nvar L = 0.00215;\nvar K = 0.39;\n\nmsg.topic = \"temperatures\";\n// msg.payload[\"timestamp\"] = Date.now() - startTime;\nmsg.payload[\"timestamp\"] = Math.floor(new Date().getTime() / 1000) - startTime;\n\nmsg.payload[\"heat_flux\"] = K * (msg.payload[\"/temperature2\"] - msg.payload[\"/temperature3\"])/L;\n\n///////////////////////////////////////////////////////////////\n\ntableData.push(msg.payload)\nflow.set(\"tableData\", tableData)\n\n///////////////////////////////////////////////////////////////\n\nmsg.payload = tableData\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// var startTime = flow.get('startTime') || Date.now();\n// startTime = Number(startTime)\nflow.set(\"startTime\", Math.floor(new Date().getTime() / 1000))\n",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 820,
+        "wires": [
+            [
+                "54da38d3783342d5",
+                "6e72c7e17863fba9"
+            ]
+        ]
+    },
+    {
+        "id": "5f24114a9437f1e1",
+        "type": "ui_button",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "group": "18aad3b623715feb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart Experiment",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 880,
+        "wires": [
+            [
+                "e4491101581f2598",
+                "b7af50ace1bd4934"
+            ]
+        ]
+    },
+    {
+        "id": "e4491101581f2598",
+        "type": "change",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "tableData",
+                "pt": "flow",
+                "to": "[]",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 880,
+        "wires": [
+            [
+                "6e72c7e17863fba9",
+                "c7d4f3eb62ac3e64"
+            ]
+        ]
+    },
+    {
+        "id": "c7d4f3eb62ac3e64",
+        "type": "debug",
+        "z": "5e610d1d954faebc",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "af13d136272fcbb4",
+        "type": "csv",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "all",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 970,
+        "y": 720,
+        "wires": [
+            [
+                "20a80ff19b4946de",
+                "7c133ec8d85e1a75"
+            ]
+        ]
+    },
+    {
+        "id": "20a80ff19b4946de",
+        "type": "debug",
+        "z": "5e610d1d954faebc",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "7c133ec8d85e1a75",
+        "type": "file",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "filename": "/home/ubuntu/data.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1160,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7af50ace1bd4934",
+        "type": "file",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "filename": "/home/ubuntu/data.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 870,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "448e6a1d869fee81",
+        "type": "ui_button",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "group": "18aad3b623715feb",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Download Data",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "tableData",
+        "payloadType": "flow",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 820,
+        "y": 660,
+        "wires": [
+            [
+                "af13d136272fcbb4"
+            ]
+        ]
+    },
+    {
+        "id": "930ae168173ae7dd",
+        "type": "function",
+        "z": "5e610d1d954faebc",
+        "name": "Set base path",
+        "func": "//restrict to c:\\temp\\\nvar basePath = \"c:\\\\temp\\\\\";\nvar filename = msg.req.params.fn;\n\n\nif(filename.includes(\"..\\\\\")){\n    msg.payload = \"Illegal file path\";\n    msg.statusCode = 405;//not allowed\n    return [null, msg];//fire output 2\n} else if(filename.includes(\"../\")){\n    msg.payload = \"Illegal file path\";\n    msg.statusCode = 405;//not allowed\n    return [null, msg];//fire output 2\n} \n//TODO: add more checks\n\nmsg.filename = basePath + filename;\nreturn [msg, null];//fire output 1\n\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 980,
+        "y": 1140,
+        "wires": [
+            [
+                "ba702e362ef28981"
+            ],
+            [
+                "edd50d66f024505d"
+            ]
+        ]
+    },
+    {
+        "id": "edd50d66f024505d",
+        "type": "http response",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1330,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "ba702e362ef28981",
+        "type": "file in",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "filename": "/home/ubuntu/data.csv",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1210,
+        "y": 1120,
+        "wires": [
+            [
+                "edd50d66f024505d"
+            ]
+        ]
+    },
+    {
+        "id": "b5ea4c695fa82804",
+        "type": "catch",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 800,
+        "y": 1220,
+        "wires": [
+            [
+                "93188e30627ce02a",
+                "2e1f802f19163ed0"
+            ]
+        ]
+    },
+    {
+        "id": "93188e30627ce02a",
+        "type": "function",
+        "z": "5e610d1d954faebc",
+        "name": "Set 404",
+        "func": "msg.payload = msg.error;\nmsg.statusCode = 404;//resource not found\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1180,
+        "y": 1220,
+        "wires": [
+            [
+                "edd50d66f024505d"
+            ]
+        ]
+    },
+    {
+        "id": "2e1f802f19163ed0",
+        "type": "debug",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 830,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "9483569498c19d9e",
+        "type": "ui_template",
+        "z": "5e610d1d954faebc",
+        "group": "18aad3b623715feb",
+        "name": "ui_temlplate - present download links on dashboard",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "    <a href=\"/files/data.csv\"><button class=\"md-raised md-button md-ink-ripple\" type=\"button\" ng-transclude=\"\" ng-click=\"me.buttonClick($event)\" ng-disabled=\"me.item.disabled\" aria-label=\"buttonRestart Experiment\" ng-style=\"{'background-color':me.item.getText(), 'color':me.item.getColor(), 'z-index':1, 'padding':'0px'}\" style=\"z-index: 1; padding: 0px;\"> <ui-icon ng-show=\"me.item.icon.length\" icon=\"\" ng-style=\"{color:me.item.getColor()}\" aria-hidden=\"true\" class=\"ng-hide\"><!----> <!----> <!----> <!----> <!----> <!----> <!----> <!----> </ui-icon> <span ng-bind-html=\"me.item.getLabel()\">Restart Experiment</span> <!----> <div class=\"md-ripple-container\" style=\"\"></div></button></a>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "md-raised md-button md-ink-ripple",
+        "x": 1170,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "77ca0313bbea9c5c",
+        "type": "comment",
+        "z": "5e610d1d954faebc",
+        "name": "Create http endpoint <nodered>/files/xxx  where xxx is the file name to download",
+        "info": "",
+        "x": 1020,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "ad6ee343a50c0888",
+        "type": "http in",
+        "z": "5e610d1d954faebc",
+        "name": "",
+        "url": "/files/:fn",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 810,
+        "y": 1140,
+        "wires": [
+            [
+                "930ae168173ae7dd"
+            ]
+        ]
+    },
+    {
+        "id": "4482ff548253f9c1",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "18.208.152.162",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fb978ef950202e75",
+        "type": "ui_group",
+        "name": "Home",
+        "tab": "8040927cc36ba5f7",
+        "order": 1,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e6d5cd3e958962c4",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "8040927cc36ba5f7",
+        "order": 2,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7b3b1233e88aad03",
+        "type": "ui_group",
+        "name": "Temperatures",
+        "tab": "02ee33f31705cd03",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "18aad3b623715feb",
+        "type": "ui_group",
+        "name": "Temperature Data Table",
+        "tab": "d098798bcc5f20b3",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8040927cc36ba5f7",
+        "type": "ui_tab",
+        "name": "Temperature Plots",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "02ee33f31705cd03",
+        "type": "ui_tab",
+        "name": "All Sensors",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d098798bcc5f20b3",
+        "type": "ui_tab",
+        "name": "Data Table",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
